@@ -11,18 +11,20 @@ b_room = False
 k_room = False
 look_around = False
 l_room = False
+f_door = False
+kill = False
 silence = False
 lady = False
 keys = False
 
 
-lroom_intro = ('\nYou are in the living room. There is a kitchen is to the west.'
+lroom_intro = ('\nYou are in the living room. There is a kitchen to the west.'
                 '\nThere is a bedroom to the east. The front door is to the '
                 'north.\nThere is a window to the south.')
 
 
 def living_room():
-    print(lroom_intro)
+    print (lroom_intro)
     while True:
         choice = raw_input('\n> ').lower()
         global b_room
@@ -250,7 +252,7 @@ ghosts = [c1, c2, c3, c4]
 
 def ran_el_basement():
     base_chance = (random.choice(ghosts))
-    print(base_chance)
+    print base_chance
     if ('Michael' in base_chance):
         quit(0)
     else:
@@ -325,7 +327,7 @@ def e_side1(): # if user chooses to go east
     print ('\nYou hurriedly walk along the path and turn the corner of the '
             'apartment complex.')
     chance = (random.choice(michael2))
-    print(chance)
+    print chance
     if ('michael' in chance):
         quit(0)
     else:
@@ -388,7 +390,7 @@ def e_side2(): # if user isn't caught by michael
         global keys
         if ('blue' in choice) and (keys):
             keys_blue_car_random = (random.choice(keys_blue_car))
-            print(keys_blue_car_random)
+            print keys_blue_car_random
             quit(0)
         elif ('yellow' in choice) and (keys):
             print ('\nYou sprint towards the yellow car and try to open the door '
@@ -405,7 +407,7 @@ def e_side2(): # if user isn't caught by michael
         elif ('blue' in choice) or ('yellow' in choice) or ('red' in choice
         ) and (not keys):
             nokeys_escape = (random.choice(nokeys_cars))
-            print(nokeys_escape)
+            print nokeys_escape
             quit(0)
         else:
             print ('\nTry again.')
@@ -415,7 +417,7 @@ def w_side1(): # if user chooses to go west
     print ('\nYou trudge through the snow to the west side of the apartment '
             'complex.')
     chance = (random.choice(michael3))
-    print(chance)
+    print chance
     if ('michael' in chance):
         quit(0)
     else:
@@ -431,7 +433,7 @@ def w_side2(): # if user isn't caught by michael
         global keys
         if ('blue' in choice) and (keys):
             keys_blue_car_random = (random.choice(keys_blue_car))
-            print(keys_blue_car_random)
+            print keys_blue_car_random
             quit(0)
         elif ('yellow' in choice) and (keys):
             print ('\nYou sprint towards the yellow car and try to open the door '
@@ -448,7 +450,7 @@ def w_side2(): # if user isn't caught by michael
         elif ('blue' in choice) or ('yellow' in choice) or ('red' in choice
         ) and (not keys):
             nokeys_escape = (random.choice(nokeys_cars))
-            print(nokeys_escape)
+            print nokeys_escape
             quit(0)
         else:
             print ('\nTry again.')
@@ -456,7 +458,7 @@ def w_side2(): # if user isn't caught by michael
 
 def ran_el_level2():
     chance = (random.choice(michael1))
-    print(chance)
+    print chance
     if ('michael' in chance):
         quit(0)
     else:
@@ -465,7 +467,7 @@ def ran_el_level2():
 
 def ran_el_level3():
     chance = (random.choice(michael1))
-    print(chance)
+    print chance
     if ('michael' in chance):
         quit(0)
     else:
@@ -474,7 +476,7 @@ def ran_el_level3():
 
 def ran_el_level4():
     chance = (random.choice(michael1))
-    print(chance)
+    print chance
     if ('michael' in chance):
         quit(0)
     else:
@@ -483,7 +485,7 @@ def ran_el_level4():
 
 def ran_el_level5():
     chance = (random.choice(michael1))
-    print(chance)
+    print chance
     if ('michael' in chance):
         quit(0)
     else:
@@ -492,7 +494,7 @@ def ran_el_level5():
 
 def ran_el_level6():
     chance = (random.choice(michael1))
-    print(chance)
+    print chance
     if ('michael' in chance):
         quit(0)
     else:
@@ -501,7 +503,7 @@ def ran_el_level6():
 
 def ran_el_level7():
     chance = (random.choice(michael1))
-    print(chance)
+    print chance
     if ('michael' in chance):
         quit(0)
     else:
@@ -510,7 +512,7 @@ def ran_el_level7():
 
 def ran_el_level8():
     chance = (random.choice(michael1))
-    print(chance)
+    print chance
     if ('michael' in chance):
         quit(0)
     else:
