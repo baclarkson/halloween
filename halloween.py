@@ -12,8 +12,6 @@ k_room = False
 look_around = False
 l_room = False
 f_door = False
-kill = False
-silence = False
 lady = False
 keys = False
 
@@ -24,7 +22,7 @@ lroom_intro = ('\nYou are in the living room. There is a kitchen to the west.'
 
 
 def living_room():
-    print (lroom_intro)
+    print(lroom_intro)
     while True:
         choice = raw_input('\n> ').lower()
         global b_room
